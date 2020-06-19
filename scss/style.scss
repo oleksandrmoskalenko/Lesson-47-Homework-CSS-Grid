@@ -1,0 +1,114 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background: grey;
+}
+
+.picture {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  background-color: #fff;
+
+  &__item {
+    &-black {
+      background: #000;
+      &--1{
+        grid-area: 1/6/1/11
+      }
+      &--2{
+        grid-area: 15/6/15/11
+      }
+      &--3{
+        grid-area: 6/1/11/1
+      }
+      &--4{
+        grid-area: 6/15/11/15
+      }
+      &--5{
+        grid-area: 4/2/13/2
+      }
+      &--6{
+        grid-area: 4/14/13/14
+      }
+      &--7{
+        grid-area: 2/4/2/13
+      }
+      &--8{
+        grid-area: 14/4/14/13
+      }
+      &--9{
+        grid-area: 3/3
+      }
+      &--10{
+        grid-area: 13/3
+      }
+      &--11{
+        grid-area: 3/13
+      }
+      &--12{
+        grid-area: 13/13
+      }
+      &--13{
+        grid-area: 6/3/9/14
+      }
+      &--14{
+        grid-area: 9/4/9/7
+      }
+      &--15{
+        grid-area: 9/10/9/13
+      }
+      &--16{
+        grid-area: 13/7/13/10
+      }
+      &--17{
+        grid-area: 12/6
+      }
+      &--18{
+        grid-area: 12/10
+      }
+    }
+
+    &-yellow {
+      background: #ffff00;
+      &--1{
+        grid-area: 3/3/14/14
+      }
+      &--2{
+        grid-area: 7/2/11/2
+      }
+      &--3{
+        grid-area: 7/14/11/14
+      }
+      &--4{
+        grid-area: 2/6/2/11
+      }
+      &--5{
+        grid-area: 14/6/14/11
+      }
+      &--6{
+        grid-area: 8/8
+      }
+    }
+
+    &-white {
+      background: #fff;
+      &--1{
+        grid-area: 7/5/7/7
+      }
+      &--2{
+        grid-area: 7/11/7/13
+      }
+      &--3{
+        grid-area: 8/6
+      }
+      &--4{
+        grid-area: 8/12
+      }
+    }
+  }
+}
+
